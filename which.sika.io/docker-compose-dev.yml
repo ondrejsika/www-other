@@ -1,0 +1,5 @@
+version: '3.7'
+services:
+  app:
+    ports:
+      - ${PORT_HTTP:-80}:80
