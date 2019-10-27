@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 _CONFIG = {
+    # Temporary
+    'https://ondrej-sika.cz/': ['ondrej-sika.com'],
+
     'https://skolenie.kubernetes.sk/': ['kubernetes.sk'],
     'https://training.kubernetes.is/': ['kubernetes.is'],
     'https://training.kubernetes.lu/': ['kubernetes.lu'],
