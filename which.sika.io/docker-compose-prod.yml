@@ -2,7 +2,7 @@ version: '3.7'
 services:
   app:
     labels:
-      traefik.frontend.rule: Host:which.sika.io
+      traefik.frontend.rule: Host:which.sika.io,sika.io,www.sika.io,ondrejsika.io,www.ondrejsika.io
       traefik.enable: 'true'
     networks:
         - traefik
