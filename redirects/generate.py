@@ -4,6 +4,7 @@ _CONFIG = {
     'https://skolenie.kubernetes.sk/': ['kubernetes.sk'],
     'https://training.kubernetes.is/': ['kubernetes.is'],
     'https://training.kubernetes.lu/': ['kubernetes.lu'],
+    'https://trainera.io/': ['trainera.cz'],
 }
 
 CONFIG = {}
