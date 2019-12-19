@@ -5,7 +5,7 @@ services:
     build: .
     image: ${IMAGE:-registry.sikahq.com/www/www-other/redirects}
     labels:
-      traefik.frontend.rule: Host:trainera.cz,www.trainera.cz,kubernetes.is,www.kubernetes.is,kubernetes.sk,www.kubernetes.sk,ondrejsika.cz,www.ondrejsika.cz,ondrejsika.ch,www.ondrejsika.ch,kubernetes.lu,www.kubernetes.lu
+      traefik.frontend.rule: Host:trainera.cz,www.trainera.cz,kubernetes.is,www.kubernetes.is,kubernetes.sk,www.kubernetes.sk,ondrejsika.cz,www.ondrejsika.cz,ondrejsika.ch,docker-training.eu,git-training.eu,www.ondrejsika.ch,www.docker-training.eu,www.git-training.eu,kubernetes.lu,www.kubernetes.lu
       traefik.enable: 'true'
     networks:
         - traefik
