@@ -3,5 +3,17 @@
   "version": "0.0.0.0",
   "author": "Ondrej Sika <ondrej@ondrejsika.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "prettier-check": "prettier -l '**/*.js'",
+    "prettier-write": "prettier --write '**/*.js'"
+  },
+  "dependencies": {
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
 }
