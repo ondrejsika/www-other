@@ -6,7 +6,10 @@
   "private": true,
   "scripts": {
     "prettier-check": "prettier -l '**/*.js'",
-    "prettier-write": "prettier --write '**/*.js'"
+    "prettier-write": "prettier --write '**/*.js'",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "next": "^9.1.6",
