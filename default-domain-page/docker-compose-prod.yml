@@ -2,7 +2,7 @@ version: '3.7'
 services:
   app:
     labels:
-      traefik.frontend.rule: Host:nixos.cz,rustlang.cz,rust-lang.cz
+      traefik.frontend.rule: Host:nixos.cz,rustlang.cz,rust-lang.cz,webtime.cz
       traefik.enable: 'true'
     networks:
         - traefik
