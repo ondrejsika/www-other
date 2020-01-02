@@ -7,6 +7,7 @@ _CONFIG = {
     'https://trainera.io/': ['trainera.cz'],
     'https://ondrej-sika.cz/': ['ondrejsika.cz'],
     'https://sika.io/': ['ondrejsika.ch', 'docker-training.eu', 'git-training.eu'],
+    'https://ondrejsika.com/': ['os.oxs.cz'],
 }
 
 CONFIG = {}
