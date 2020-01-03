@@ -66,13 +66,6 @@ services:
     labels:
       traefik.frontend.rule: Host:%s
       traefik.enable: 'true'
-    networks:
-        - traefik
-
-networks:
-  traefik:
-    external:
-      name: traefik
 '''
 
 
