@@ -1,0 +1,5 @@
+version: '3.7'
+services:
+  helm:
+    ports:
+      - ${PORT_HTTP:-80}:80

@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  helm:
+    labels:
+      traefik.frontend.rule: Host:${HOST?Varibale "HOST" is requred}
+      traefik.enable: 'true'
+    networks:
+        - traefik
+
+networks:
+  traefik:
+    external:
+      name: traefik

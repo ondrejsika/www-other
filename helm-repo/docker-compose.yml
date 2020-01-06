@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  helm:
+    image: nginx
+    volumes:
+      - helm-data:/usr/share/nginx/html
+
+volumes:
+  helm-data:
