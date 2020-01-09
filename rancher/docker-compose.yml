@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  rancher:
+    image: rancher/rancher
+    restart: always
+    volumes:
+      - rancher-data:/var/lib/rancher
+
+volumes:
+  rancher-data:

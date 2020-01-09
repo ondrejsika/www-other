@@ -1,0 +1,6 @@
+version: '3.7'
+services:
+  rancher:
+    ports:
+      - ${PORT_HTTP:-80}:80
+      - ${PORT_HTTPS:-443}:443
