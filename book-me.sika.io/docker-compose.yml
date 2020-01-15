@@ -1,0 +1,5 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    image: ${IMAGE:-registry.sikahq.com/www/www-other/book-me.sika.io}
