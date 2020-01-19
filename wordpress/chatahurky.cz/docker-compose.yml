@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+  wordpress:
+    build: .
+    image: ${IMAGE:-registry.sikahq.com/www/www-other/wordpress/chatahurky.cz}
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: bar.l.oxs.cz
+      WORDPRESS_DB_NAME: chatahurkycz
+      WORDPRESS_DB_PASSWORD: hroznesuperpes2019
+      WORDPRESS_DB_USER: chatahurkycz
+    volumes:
+      - wordpress:/var/www/html
+    labels:
+      - traefik.frontend.rule=Host:chatahurky.cz,www.chatahurky.cz,chata-hurky.cz,www.chata-hurky.cz
+      - traefik.enable=true
+    networks:
+      - traefik
+
+volumes:
+  wordpress:
+
+networks:
+  traefik:
+    external:
+      name: traefik
