@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  ghost:
+  firma_sika_blog:
     image: ghost:3-alpine
     restart: always
     environment:
@@ -9,6 +9,19 @@ services:
       - ./data/firma.sika.blog:/var/lib/ghost/content
     labels:
       - traefik.frontend.rule=Host:firma.sika.blog
+      - traefik.port=2368
+      - traefik.enable=true
+    networks:
+        - traefik
+  ps_sika_blog:
+    image: ghost:3-alpine
+    restart: always
+    environment:
+      url: https://ps.sika.blog
+    volumes:
+      - ./data/ps.sika.blog:/var/lib/ghost/content
+    labels:
+      - traefik.frontend.rule=Host:ps.sika.blog
       - traefik.port=2368
       - traefik.enable=true
     networks:
