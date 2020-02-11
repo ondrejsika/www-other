@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  app:
+    labels:
+      traefik.frontend.rule: Host:invite.sika.io
+      traefik.enable: 'true'
+    networks:
+        - traefik
+
+networks:
+  traefik:
+    external:
+      name: traefik
