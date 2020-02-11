@@ -2,7 +2,7 @@ version: '3.7'
 services:
   app:
     labels:
-      traefik.frontend.rule: Host:invite.sika.io
+      traefik.frontend.rule: Host:join.sika.io
       traefik.enable: 'true'
     networks:
         - traefik
