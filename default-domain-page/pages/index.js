@@ -5,12 +5,25 @@ const page = props => {
     <div>
       <Head>
         <title>{props.domain}</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <h1>{props.domain}</h1>
       <p>
         You can reach me on{" "}
         <a href="mailto:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>.
       </p>
+      <style jsx global>{`
+        h1 {
+          font-family: "IBM Plex Mono", monospace;
+        }
+        a,
+        p {
+          font-family: "IBM Plex Sans", sans-serif;
+        }
+      `}</style>
     </div>
   );
 };
