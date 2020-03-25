@@ -14,7 +14,12 @@ const page = props => {
         <h1>{props.domain}</h1>
         <p>
           You can reach me on{" "}
-          <a href="mailto:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>.
+          <a
+            href={`mailto:ondrej@ondrejsika.com?subject=[parking] Domain ${props.domain}`}
+          >
+            ondrej@ondrejsika.com
+          </a>
+          .
         </p>
       </center>
 
