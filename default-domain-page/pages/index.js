@@ -3,7 +3,9 @@ import Head from "next/head";
 const page = props => {
   return (
     <div>
-      <Head>{props.domain}</Head>
+      <Head>
+        <title>{props.domain}</title>
+      </Head>
       <h1>{props.domain}</h1>
       <p>
         You can reach me on{" "}
