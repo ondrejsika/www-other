@@ -1,11 +1,14 @@
 import Head from "next/head";
 
 const page = props => {
-  return(
+  return (
     <div>
       <Head>{props.domain}</Head>
       <h1>{props.domain}</h1>
-      <p>You can reach me on <a href="mailto:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>.</p>
+      <p>
+        You can reach me on{" "}
+        <a href="mailto:ondrej@ondrejsika.com">ondrej@ondrejsika.com</a>.
+      </p>
     </div>
   );
 };
@@ -13,7 +16,7 @@ const page = props => {
 page.getInitialProps = ({ req }) => {
   let host = req ? req.headers.host : window.location.hostname;
   return {
-    domain: host,
+    domain: host
   };
 };
 
