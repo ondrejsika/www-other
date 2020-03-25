@@ -1,5 +1,0 @@
-version: '3.7'
-services:
-  app:
-    build: .
-    image: ${IMAGE:-registry.sikahq.com/www/www-other/default-domain-page}
