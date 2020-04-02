@@ -1,5 +1,47 @@
 version: '3.7'
 services:
+  knihy_sika_blog:
+    image: ghost:1-alpine
+    restart: always
+    environment:
+      url: https://knihy.sika.blog
+    volumes:
+      - ./data/knihy.sika.blog:/var/lib/ghost/content
+    labels:
+      - traefik.frontend.rule=Host:knihy.sika.blog
+      - traefik.port=2368
+      - traefik.enable=true
+    networks:
+        - traefik
+
+  ondrej_sika_blog:
+    image: ghost:1-alpine
+    restart: always
+    environment:
+      url: https://ondrej.sika.blog
+    volumes:
+      - ./data/ondrej.sika.blog:/var/lib/ghost/content
+    labels:
+      - traefik.frontend.rule=Host:ondrej.sika.blog
+      - traefik.port=2368
+      - traefik.enable=true
+    networks:
+        - traefik
+
+  random_sika_blog:
+    image: ghost:3-alpine
+    restart: always
+    environment:
+      url: https://random.sika.blog
+    volumes:
+      - ./data/random.sika.blog:/var/lib/ghost/content
+    labels:
+      - traefik.frontend.rule=Host:random.sika.blog
+      - traefik.port=2368
+      - traefik.enable=true
+    networks:
+        - traefik
+
   firma_sika_blog:
     image: ghost:3-alpine
     restart: always
@@ -13,6 +55,7 @@ services:
       - traefik.enable=true
     networks:
         - traefik
+
   ps_sika_blog:
     image: ghost:3-alpine
     restart: always
