@@ -5,7 +5,7 @@ services:
     image: ${IMAGE:-registry.sikahq.com/www/www-other/wordpress/chatahurky.cz}
     restart: always
     environment:
-      WORDPRESS_DB_HOST: bar.l.oxs.cz
+      WORDPRESS_DB_HOST: db0.oxs.cz
       WORDPRESS_DB_NAME: chatahurkycz
       WORDPRESS_DB_PASSWORD: hroznesuperpes2019
       WORDPRESS_DB_USER: chatahurkycz
