@@ -70,6 +70,20 @@ services:
     networks:
         - traefik
 
+  ondandzuz_com:
+    image: ghost:2-alpine
+    restart: always
+    environment:
+      url: https://ondandzuz.com
+    volumes:
+      - ./data/ondandzuz.com:/var/lib/ghost/content
+    labels:
+      - traefik.frontend.rule=Host:ondandzuz.com,www.ondandzuz.com
+      - traefik.port=2368
+      - traefik.enable=true
+    networks:
+        - traefik
+
 networks:
   traefik:
     external:
