@@ -6,7 +6,7 @@ _CONFIG = {
     'https://training.kubernetes.lu/': ['kubernetes.lu'],
     'https://trainera.io/': ['trainera.cz'],
     'https://ondrej-sika.cz/': ['ondrejsika.cz'],
-    'https://sika.io/': ['ondrejsika.ch', 'docker-training.eu', 'git-training.eu', 'sikalabs.com'],
+    'https://sika.io/': ['ondrejsika.ch', 'docker-training.eu', 'git-training.eu'],
     'https://ondrejsika.com/': ['os.oxs.cz'],
     'https://stepanka.jebozi.cz/': ['jebozi.cz', 'www.stepanka.jebozi.cz'],
 }
