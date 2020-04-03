@@ -1,8 +1,8 @@
 version: '3.7'
 services:
-  helm:
+  helm_oxs_cz:
     labels:
-      traefik.frontend.rule: Host:${HOST?Varibale "HOST" is requred}
+      traefik.frontend.rule: Host:helm.oxs.cz
       traefik.enable: 'true'
     networks:
         - traefik

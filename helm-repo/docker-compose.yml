@@ -1,9 +1,9 @@
 version: '3.7'
 services:
-  helm:
+  helm_oxs_cz:
     image: nginx
     volumes:
-      - helm-data:/usr/share/nginx/html
+      - helm-oxs-cz-data:/usr/share/nginx/html
 
 volumes:
-  helm-data:
+  helm-oxs-cz-data:
