@@ -5,5 +5,5 @@ services:
     build: .
     image: ${IMAGE:-registry.sikahq.com/www/www-other/redirects}
     labels:
-      traefik.frontend.rule: Host:jebozi.cz,www.stepanka.jebozi.cz,www.jebozi.cz,www.www.stepanka.jebozi.cz,trainera.cz,www.trainera.cz,kubernetes.is,www.kubernetes.is,kubernetes.sk,www.kubernetes.sk,ondrejsika.cz,www.ondrejsika.cz,ondrejsika.ch,www.ondrejsika.ch,os.oxs.cz,www.os.oxs.cz,kubernetes.lu,www.kubernetes.lu,sedu.cz,www.sedu.cz
+      traefik.frontend.rule: Host:jebozi.cz,www.stepanka.jebozi.cz,www.jebozi.cz,www.www.stepanka.jebozi.cz,trainera.cz,www.trainera.cz,kubernetes.is,www.kubernetes.is,meetups.hashicorp.cz,www.meetups.hashicorp.cz,kubernetes.sk,www.kubernetes.sk,ondrejsika.cz,www.ondrejsika.cz,ondrejsika.ch,www.ondrejsika.ch,os.oxs.cz,www.os.oxs.cz,kubernetes.lu,www.kubernetes.lu,sedu.cz,www.sedu.cz
       traefik.enable: 'true'

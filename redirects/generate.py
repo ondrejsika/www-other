@@ -9,6 +9,7 @@ _CONFIG = {
     'https://sika.io/': ['ondrejsika.ch'],
     'https://ondrejsika.com/': ['os.oxs.cz'],
     'https://stepanka.jebozi.cz/': ['jebozi.cz', 'www.stepanka.jebozi.cz'],
+    'https://www.meetup.com/Prague-HashiCorp-User-Group/': ['meetups.hashicorp.cz'],
 }
 
 _CONFIG_PATH = {
