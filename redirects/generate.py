@@ -10,7 +10,7 @@ _CONFIG = {
     'https://ondrejsika.com/': ['os.oxs.cz'],
     'https://stepanka.jebozi.cz/': ['jebozi.cz', 'www.stepanka.jebozi.cz'],
     'https://www.meetup.com/Prague-HashiCorp-User-Group/': ['meetups.hashicorp.cz'],
-    'https://sika.link/devopslive-form/': ['devopslive.cz'],
+    'https://ondrej-sika.cz/devopslive': ['devopslive.cz'],
 }
 
 _CONFIG_PATH = {
