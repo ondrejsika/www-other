@@ -2,7 +2,7 @@ version: '3.7'
 services:
   app:
     labels:
-      traefik.frontend.rule: Host:nixos.cz,rustlang.cz,rust-lang.cz,webtime.cz,devopsaci.cz,devopsaci.sk,devopsaci.com,solab.cz,goazure.cz,knative.cz,knative.sk,holsanova.com,holsanova.cz,jeschkeova.com,jeschkeova.cz,zerotoone.cz,reactgirls.org,hashicorp.cz,hashicorp.sk,digitalocean.cz,rancher.sk,vercel.cz,rosprim.com
+      traefik.frontend.rule: Host:nixos.cz,rustlang.cz,rust-lang.cz,webtime.cz,devopsaci.cz,devopsaci.sk,devopsaci.com,solab.cz,goazure.cz,knative.cz,knative.sk,holsanova.com,holsanova.cz,jeschkeova.com,jeschkeova.cz,zerotoone.cz,reactgirls.org,hashicorp.cz,hashicorp.sk,digitalocean.cz,rancher.sk,vercel.cz,rosprim.com,seidelova.com,seidelova.cz
       traefik.enable: 'true'
     networks:
         - traefik
