@@ -1,8 +1,9 @@
-version: '3.7'
+version: "3.7"
 services:
   rancher:
     image: rancher/rancher
     restart: always
+    privileged: true
     volumes:
       - rancher-data:/var/lib/rancher
 
