@@ -1,0 +1,3 @@
+# which.trainera.io
+
+This site will redirect you to my localized website like trainera.cz, trainera.de, ...

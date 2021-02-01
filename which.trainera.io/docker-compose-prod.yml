@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  app:
+    labels:
+      traefik.frontend.rule: Host:which.trainera.io,trainera.io,www.trainera.io
+      traefik.enable: "true"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external:
+      name: traefik
